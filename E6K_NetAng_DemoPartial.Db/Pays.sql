@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Pays]
+(
+	Code NCHAR(2) NOT NULL,
+	Nom NVARCHAR(128) NOT NULL, 
+    CONSTRAINT [PK_Pays] PRIMARY KEY ([Code]), 
+    CONSTRAINT [UK_Pays_Nom] UNIQUE ([Nom])
+)

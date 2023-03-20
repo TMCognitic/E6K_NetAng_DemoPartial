@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Pays>
+@{
+    ViewBag.Title = "Sample Index";
+}
+
+<form method="post">
+    <div>
+        <select name="Pays">
+            <option value="0" >--- Select a country ---</option>
+            @foreach(Pays pays in Model)
+            {
+                <option value="@pays.Code">@pays.Nom</option>
+            }
+        </select>
+    </div>
+
+    <div id="Villes"></div>
+</form>

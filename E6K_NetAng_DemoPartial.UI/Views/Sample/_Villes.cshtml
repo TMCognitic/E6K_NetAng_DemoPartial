@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Ville>
+
+<select >
+    <option value="0">Select a city</option>
+    @foreach(Ville ville in Model)
+    {
+        <option value="@ville.Id">@ville.Nom</option>
+    }
+</select>
